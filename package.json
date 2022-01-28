@@ -6,7 +6,9 @@
   "scripts": {
     "start": "cross-env PORT=7070 gulp start --development",
     "build": "gulp build --production",
-    "lint-styles": "stylelint './src/sass/**/*.scss' --syntax scss --fix"
+    "lint-styles": "stylelint './src/sass/**/*.scss' --syntax scss --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "homepage": "https://vladimirkostroba.github.io/landin-page",
   "repository": {
